@@ -1,0 +1,47 @@
+print ('Welcome to my principal quiz game!')
+
+playing = input("Do you want to play? ")
+
+if playing.lower() != "yes":
+    quit()
+    
+print("Okay! Let's play :)" )
+score = 0
+
+answer = input('What does the Pi words in Pi515 stand for? ')
+if answer == "pursuit of innovation":
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')
+    
+answer = input('How many college students in the principal program? ')
+if answer == "2":
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')
+    
+answer = input('What is Kiana job position in Pi515 ? ')
+if answer == "program coordinator":
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')
+
+answer = input('Is Nancy a co-founder for Pi515? ')
+if answer == "yes":
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')    
+    
+answer = input('Is Principal a gaming company? ')
+if answer == "no":
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')
+    
+print('You got ' + str(score) + ' questions correct!')
+print('You got ' + str((score / 5) * 100) + '%.')
